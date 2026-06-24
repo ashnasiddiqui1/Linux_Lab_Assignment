@@ -1,0 +1,67 @@
+Question 1 - Linux Environment Verification
+
+1. Username Verification
+
+Command:
+whoami
+
+Output:
+ashna
+
+Explanation:
+The whoami command displays the username of the currently logged-in user. The output confirmed that the active user account is ashna.
+
+2. Group Membership Verification
+
+Command:
+groups
+
+Output:
+(Output displayed the groups associated with the ashna user account.)
+
+Explanation:
+The groups command displays all groups associated with the current user account. This information helps identify the permissions and access levels available to the user. The exact groups may vary depending on the system configuration.
+
+3. Current Shell Verification
+
+Command:
+echo $SHELL
+
+Output:
+/bin/zsh
+
+Explanation:
+The echo $SHELL command displays the default shell currently being used. The output shows that the Z Shell (zsh) is the active shell on this system.
+
+4. Current Working Directory Verification
+
+Command:
+pwd
+
+Output:
+/Users/ashna/Desktop/Linux_Lab_Assignment/Question1
+
+Explanation:
+The pwd command displays the absolute path of the current working directory. The output confirms that all Question 1 files are being created inside the Question1 folder of the Linux Lab Assignment repository.
+
+5. Workspace File Listing
+
+Command:
+ls -la
+
+Output:
+Environment_Report.txt and directory information displayed.
+
+Explanation:
+The ls -la command lists all files and directories, including hidden files, along with permissions, ownership information, and timestamps. The output confirmed that Environment_Report.txt exists in the workspace.
+
+6. Network Connectivity Verification
+
+Command:
+ping -c 4 google.com
+
+Output:
+4 packets transmitted, 4 packets received, 0.0% packet loss
+
+Explanation:
+The ping command was used to test internet connectivity. Successful transmission and reception of all packets confirmed that the system has a working network connection.
