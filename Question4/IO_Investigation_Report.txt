@@ -1,0 +1,25 @@
+Question 4 - File Access and I/O Investigation
+
+Open Files
+
+The lsof command was used to identify files currently opened by running processes. The output displayed file names, process IDs, and access information.
+
+File Descriptors
+
+The command lsof -p $$ was used to inspect file descriptors used by the current shell session. It showed standard input, output, error streams, and other open resources.
+
+Output Redirection
+
+The command echo "Hello Linux" > output.txt redirected standard output to a file. The contents were verified using the cat command.
+
+Error Redirection
+
+The command ls nonexistentfile 2> error.txt redirected the error message to a file instead of displaying it on the terminal.
+
+Resource Limits
+
+The ulimit -a command displayed resource limits for the current shell, including limits related to files, processes, and memory usage.
+
+Linux File I/O Explanation
+
+Linux manages file input and output through file descriptors. Standard input uses descriptor 0, standard output uses descriptor 1, and standard error uses descriptor 2. Redirection operators allow output and errors to be written to files instead of the terminal.
