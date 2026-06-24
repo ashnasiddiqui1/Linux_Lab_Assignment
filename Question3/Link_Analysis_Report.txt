@@ -1,0 +1,33 @@
+Question 3 - File System and Link Analysis
+
+File Creation
+
+An original file named original.txt was created in the Question3 workspace directory. The file served as the source file for link analysis.
+
+Hard Link
+
+A hard link named hardlink.txt was created using the ln command. The hard link provides an additional filename that references the same inode as the original file.
+
+Symbolic Link
+
+A symbolic link named symlink.txt was created using the ln -s command. The symbolic link stores the path to the target file rather than directly referencing its inode.
+
+Inode Analysis
+
+The inode numbers were examined using the ls -li command. The output showed that original.txt and hardlink.txt shared the same inode number, confirming that both filenames reference the same underlying file. The symbolic link had a different inode number because it is a separate file containing a reference to the target path.
+
+Metadata Analysis
+
+The stat command was used to inspect file metadata such as inode number, ownership, permissions, file size, and timestamps. The results further confirmed that original.txt and hardlink.txt shared the same inode information, while symlink.txt maintained its own metadata.
+
+Effect of Deleting Original File
+
+After deleting original.txt, the hard link continued to provide access to the file contents because it still referenced the original inode. The symbolic link became invalid because its target path no longer existed.
+
+Observation
+
+The contents of hardlink.txt remained accessible even after original.txt was removed. Attempting to access symlink.txt resulted in a "No such file or directory" error, demonstrating the difference between hard links and symbolic links.
+
+Conclusion
+
+Hard links reference the same inode as the original file and remain functional even when the original filename is deleted. Symbolic links store only the path to a target file and become broken when the target file is removed. This experiment demonstrated the practical differences between hard links and symbolic links in a Unix-based file system.
