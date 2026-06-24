@@ -1,0 +1,41 @@
+Question 2 - Secure Project Workspace Setup
+
+Directory Structure Created
+
+A directory named ProjectWorkspace was created to serve as a secure project workspace.
+
+Permissions Before Modification
+
+Command Used:
+ls -ld ProjectWorkspace
+
+Observation:
+The directory was created with default permissions determined by the system umask settings.
+
+Umask Value
+
+Command Used:
+umask
+
+Observation:
+The umask value determines the default permissions assigned to newly created files and directories.
+
+Permissions After Modification
+
+Command Used:
+chmod 750 ProjectWorkspace
+
+Observation:
+The permissions were changed to 750. The owner has full access, the group has read and execute access, and others have no access.
+
+Ownership Details
+
+Command Used:
+stat ProjectWorkspace
+
+Observation:
+The command displayed ownership information including the user and group associated with the directory.
+
+Security Explanation
+
+Permission 750 helps protect project data by allowing only the owner full control of the directory. Group members can access the contents when required, while all access is denied to other users, improving security and preventing unauthorized access.
