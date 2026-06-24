@@ -1,0 +1,30 @@
+
+Question 5 - Storage Health Assessment and Documentation
+
+Available Storage Devices
+
+The diskutil list command was used to identify available storage devices and partitions on the system.
+
+Mounted File Systems
+
+The df -h command displayed mounted file systems and their available storage capacity.
+
+Disk Usage Statistics
+
+The du -sh command was used to determine the storage consumed by the current directory.
+
+Inode Utilization
+
+The df -i command displayed inode usage statistics for mounted file systems.
+
+Storage Health Observations
+
+The storage devices and mounted file systems were accessible and operational. Disk usage information was successfully retrieved and no immediate storage issues were observed.
+
+Recommendations
+
+1. Regularly monitor disk utilization.
+2. Remove unnecessary files and temporary data.
+3. Archive old logs and backups.
+4. Monitor inode consumption on heavily used file systems.
+5. Expand storage capacity when utilization approaches critical levels.
